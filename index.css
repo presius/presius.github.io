@@ -1,6 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
+
 body{
 	font-family: Raleway;
-	font-weight: 100;
 	color:#666;
 }
 img{
@@ -10,6 +11,20 @@ img{
 }
 img:hover{
 	-webkit-filter: grayscale(0);
+}
+a{
+	color: #666;
+}
+a:hover{
+	color: #aaa;
+}
+
+#credit{
+	position: absolute;
+	bottom: 10px;
+	right:10px;
+	color: #aaa;
+	font-size: 16px;
 }
 
 /*** INFO ***/
@@ -32,11 +47,12 @@ img:hover{
 	top: 140px;
 }
 #container > #info{
-	font-size: 60px;
-	height: 100px;
+	width: 300px;
+	height: 175px;
 	position: relative;
 	top: 100px;
 	float: right;
+	letter-spacing: 2px;
 }
 
 /*** CUBE ***/
@@ -59,7 +75,7 @@ img:hover{
 	
 	position: relative;
 	top: 100px;
-	left: 90px;
+	left: 80px;
 
 	-webkit-transform-style: preserve-3d;
 	 -moz-transform-style: preserve-3d;
