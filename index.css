@@ -4,12 +4,10 @@ body{
 	font-family: Raleway;
 	color:#666;
 }
-a{
-	color: #666;
-}
-a:hover{
-	color: #aaa;
-}
+a{ color:#666; }
+a:hover{ color:#aaa; }
+a.light{ color:#aaa; }
+a.light:hover{ color:#ccc; }
 
 #credit{
 	position: absolute;
