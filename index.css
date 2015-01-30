@@ -4,14 +4,6 @@ body{
 	font-family: Raleway;
 	color:#666;
 }
-img{
-	-webkit-filter: grayscale(1);
-	-webkit-transition: all 0.3s;
-	/*cursor: pointer;*/
-}
-img:hover{
-	-webkit-filter: grayscale(0);
-}
 a{
 	color: #666;
 }
@@ -55,6 +47,26 @@ a:hover{
 	letter-spacing: 2px;
 }
 
+/*** GRAY ***/
+
+.gray{
+	-webkit-filter: grayscale(1) brightness(1.5);
+	-moz-filter: grayscale(1) brightness(1.5);
+	-ms-filter: grayscale(1) brightness(1.5);
+	filter: grayscale(1) brightness(1.5);
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.gray:hover{
+	-webkit-filter: grayscale(0) brightness(1.1);
+	-moz-filter: grayscale(0) brightness(1.1);
+	-ms-filter: grayscale(0) brightness(1.1);
+	filter: grayscale(0) brightness(1.1);
+}
+
 /*** CUBE ***/
 
 .container {
@@ -81,13 +93,19 @@ a:hover{
 	 -moz-transform-style: preserve-3d;
 	   -o-transform-style: preserve-3d;
 	      transform-style: preserve-3d;
-	/*-webkit-transition: -webkit-transform 0.5s;
-	 -moz-transition: -moz-transform 0.5s;
-	   -o-transition: -o-transform 0.5s;
-	      transition: transform 0.5s;*/
+
+	-webkit-transform: rotateX(-35deg) rotateY(-45deg);
+	-webkit-transform-origin: 80px 80px;
+
+	-moz-transform: rotateX(-35deg) rotateY(-45deg);
+	-moz-transform-origin: 80px 80px;
+
+	-ms-transform: rotateX(-35deg) rotateY(-45deg);
+	-ms-transform-origin: 80px 80px;
 
 	transform: rotateX(-35deg) rotateY(-45deg);
 	transform-origin: 80px 80px;
+
 }
 
 #cube div {
@@ -103,13 +121,13 @@ a:hover{
 }
 
 #cube .front  {
-	background: url(presius_.png);
+	background: url(faces/art.jpg);
 }
 #cube .right  {
-	background: url(presius_.png);
+	background: url(faces/film.jpg);
 }
 #cube .top    {
-	background: url(presius_.png);
+	background: url(faces/fashion.jpg);
 }
 
 #cube .front  {
